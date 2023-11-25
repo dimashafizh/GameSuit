@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- papan score -->
+    <div class="papan-score">
+        <div class="papan-player">
+            <div class="nama-player">Player</div>
+            <div id="score-player" class="score-player">0</div>
+        </div>
+        <div class="papan-computer">
+            <div class="nama-computer">Computer</div>
+            <div id="score-computer" class="score-computer">0</div>
+        </div>
+    </div>
+
+    <div class="reset-button mb-2">
+        <button onclick="reset()">Reset Score</button>
+    </div>
+        
+    <!-- papan permainan -->
+    <div class="papan-permainan">
+        <div class="image-player">
+            <img id="img-player" src="images/paper-player.png" alt="" width="100%">
+        </div>
+        <div class="image-computer">
+            <img id="img-computer" src="images/paper-computer.png" alt="" width="100%">
+        </div>
+    </div>
+
+    <!-- papan button -->
+    <div class="papan-button mb-5">
+        <button class="play-btn" onclick="play('rock')">Rock</button>
+        <button class="play-btn" onclick="play('paper')">Paper</button>
+        <button class="play-btn" onclick="play('scissor')">Scissor</button>
+    </div>
+    
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>My Project By Dimas Hafizh | Game Suit</p>
+        </div>
+    </footer>
+
+    <script>
+        function reset() {
+            location.reload();
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
